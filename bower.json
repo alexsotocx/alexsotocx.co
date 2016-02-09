@@ -1,0 +1,19 @@
+{
+  "name": "alexsotocx.co",
+  "description": "Site for publishing my achievements and blog posts",
+  "main": "index.js",
+  "authors": [
+    "Alexander Soto Cardona <nickforspeed25@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "http://alexsotocx.co",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
