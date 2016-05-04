@@ -3,9 +3,9 @@ require('styles/App.styl');
 
 import React from 'react';
 
-import Navbar from './Template/Navbar';
-import InformationAside from './Template/InformationAside';
-import Footer from './Template/Footer';
+import Navbar from './Navbar';
+import InformationAside from './InformationAside';
+import Footer from './Footer';
 
 class Template extends React.Component {
   constructor(props) {
