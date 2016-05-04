@@ -10,6 +10,8 @@ export default class BlogIndex extends React.Component {
     return (
       <div>
         <Post postName="ruby-start-guide.md"/>
+        <Post postName="react-guide.md"/>
+        <Post postName="rails-guide.md"/>
       </div>
     );
   }

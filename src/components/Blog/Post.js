@@ -1,6 +1,6 @@
 import React from 'react';
 import request from 'superagent';
-import markdown from 'utilities/markdownWrapper'
+import markdown from 'utilities/markdownWrapper';
 class Post extends React.Component {
 
   constructor(props) {
@@ -27,7 +27,6 @@ class Post extends React.Component {
   }
 
   render() {
-    console.log('Hey ---', this.state.post)
     if(this.state.loading) {
       return null;
     } else {
@@ -35,7 +34,6 @@ class Post extends React.Component {
         <div dangerouslySetInnerHTML={{__html: markdown(this.state.post)}}></div>
       );
     }
-
   }
 }
 

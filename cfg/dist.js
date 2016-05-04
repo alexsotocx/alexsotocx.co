@@ -27,7 +27,7 @@ let config = Object.assign({}, baseConfig, {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.NoErrorsPlugin(),
-    new CopyWebpackPlugin([{from: path.join(__dirname, '../blogposts'), to: "../blogposts"}])
+    new CopyWebpackPlugin([{from: path.join(__dirname, '../src/blogposts'), to: "../blogposts"}])
   ],
   module: defaultSettings.getDefaultModules()
 });
