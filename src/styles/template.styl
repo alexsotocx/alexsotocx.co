@@ -1,7 +1,7 @@
 html
   font-size 16px
 body
-  font 1.3rem "Vollkorn", Palatino, Times
+  font 1.3rem main-font
   color #333
   line-height 1.4
   text-align justify
@@ -9,31 +9,6 @@ body
 
 *
   outline none
-
-
-
-.NavigationBar
-  font-size 1.2rem
-  font-style italic
-  border-bottom 1px solid #ddd
-  padding 1rem 0
-  background-color white
-  position fixed
-  top 0
-  left 0
-  right 0
-  display flex
-  align-items center
-  justify-content center
-  z-index 20
-  ul
-    padding 0
-    margin 0
-    display flex
-    flex-direction row
-    list-style none
-    li
-      padding 0 1rem
 
 
 h1
@@ -79,7 +54,7 @@ pre
     max-width 100%
     overflow-x scroll
     overflow-y visible
-    font-family "Consolas", "Menlo", "Monaco", monospace, serif
+    font-family code-font
     font-size .9rem
 
 
@@ -125,3 +100,25 @@ p#heart
   .content
     flex 1
 
+.NavigationBar
+  font-size 1.2rem
+  font-style italic
+  border-bottom 1px solid #ddd
+  padding 1rem 0
+  background-color white
+  position fixed
+  top 0
+  left 0
+  right 0
+  display flex
+  align-items center
+  justify-content center
+  z-index 20
+  ul
+    padding 0
+    margin 0
+    display flex
+    flex-direction row
+    list-style none
+    li
+      padding 0 1rem
