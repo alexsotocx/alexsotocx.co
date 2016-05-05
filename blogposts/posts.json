@@ -1,0 +1,29 @@
+{
+  "posts": [
+
+    {
+      "title": "Ruby starting guide",
+      "folder": "ruby-guide",
+      "cover_image": "ruby.png",
+      "author": {
+        "name": "Alexander Soto Cardona",
+        "email": "asoto@innventto.com"
+      },
+      "tags": ["ruby", "guide"],
+      "description": "Start guide for ruby language, here we are going to talk about ruby syntax",
+      "date": "2016-04-01"
+    },
+    {
+      "title": "Ruby on Rails guide",
+      "folder": "rails-guide",
+      "cover_image": "ruby.png",
+      "author": {
+        "name": "Alexander Soto Cardona",
+        "email": "asoto@innventto.com"
+      },
+      "tags": ["ruby", "guide"],
+      "description": "Start guide for ruby on rails language",
+      "date": "2016-04-30"
+    }
+  ]
+}
