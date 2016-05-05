@@ -27,7 +27,6 @@ class Post extends React.Component {
   }
 
   render() {
-    console.log(this.props)
     if(this.state.loading) {
       return null;
     } else {
