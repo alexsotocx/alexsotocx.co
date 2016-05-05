@@ -1,39 +1,40 @@
-html, body
-  padding 1rem
-  margin auto
-  max-width 42rem
-  background #fefefe
-
+html
+  font-size 16px
 body
-  font-size: 16px
   font 1.3rem "Vollkorn", Palatino, Times
   color #333
   line-height 1.4
   text-align justify
+  position relative
 
-header, nav, article, footer
-  width 700px
-  margin 0 auto
+*
+  outline none
 
-article
-  margin-top 4rem
-  margin-bottom 4rem
-  min-height 400px
 
-footer
-  margin-bottom 50px
 
-video
-  margin 2rem 0
-  border 1px solid #ddd
-
-nav
-  font-size .9rem
+.NavigationBar
+  font-size 1.2rem
   font-style italic
   border-bottom 1px solid #ddd
   padding 1rem 0
-  p
+  background-color white
+  position fixed
+  top 0
+  left 0
+  right 0
+  display flex
+  align-items center
+  justify-content center
+  z-index 20
+  ul
+    padding 0
     margin 0
+    display flex
+    flex-direction row
+    list-style none
+    li
+      padding 0 1rem
+
 
 h1
   margin-top 0
@@ -113,22 +114,14 @@ p#heart
 .red
   color #B50000
 
-body#index
-  li
-    margin-bottom 1rem
 
-@media only screen and (max-device-width: 1024px)
-  body
-    font-size 120%
-    line-height 1.4
 
-@media only screen and (max-device-width: 480px)
-  body
-    text-align left
-  article
-    padding 0 10px
+.page
+  margin 5rem auto 0 auto
+  padding 0 1rem
+  display flex
+  flex-direction row
 
-@media only screen and (max-device-width: 480px)
-  article, footer
-    width auto
+  .content
+    flex 1
 

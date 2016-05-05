@@ -124,7 +124,7 @@ end
 
 ### Funciones
 Las funciones son bloques de código que se pueden reutilizar, comunmente estas reciben parametros y ejecutan operaciones sobre estos devolviendo un resultado, Ruby siempre retorna un valor a si sea **nil**. Para retornar un valor en ruby simplemente se ejecuta la operación **return** o se especifica el valor en la última línea de código que se ejecuta.
-```
+```ruby
 def nombre_funcion(parametro_1, parametro_2) # Retorna vacio(nil)
   puts "#{parametro_1} #{parametro_2}"
 end
@@ -155,7 +155,7 @@ puts array[1] # => 20
 
 ### Hash
 Los Hash son estructuras de datos "parecidos a los vectores", estos relacionan un parejas de datos, es decir un valor A me entrega un Valor B. Los **valores A** pueden ser de cualquier tipo, ya que estos son convertidos a números por el algoritmo hash.
-```
+```ruby
 hash = {}
 hash[1] = 20
 hash[20] = 2000

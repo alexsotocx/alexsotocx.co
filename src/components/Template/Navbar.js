@@ -8,7 +8,14 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <div></div>
+      <nav className="NavigationBar">
+        <ul>
+          <li>Home</li>
+          <li>Blog</li>
+          <li>Catalogue</li>
+          <li>About</li>
+        </ul>
+      </nav>
     );
   }
 }

@@ -13,7 +13,7 @@ class Post extends React.Component {
 
   componentDidMount() {
     request
-      .get(`/blogposts/${this.props.postName}`)
+      .get(`/blogposts/${this.props.params.post_name}/post.md`)
       .end((err, res) => {
         var post = '# Error\n';
         if(!err) {
@@ -27,16 +27,16 @@ class Post extends React.Component {
   }
 
   render() {
+    console.log(this.props)
     if(this.state.loading) {
       return null;
     } else {
       return (
-        <div dangerouslySetInnerHTML={{__html: markdown(this.state.post)}}></div>
+        <article className="PostContent" dangerouslySetInnerHTML={{__html: markdown(this.state.post)}}></article>
       );
     }
   }
 }
 
-Post.propTypes = { postName: React.PropTypes.string.isRequired };
 
 export default Post;

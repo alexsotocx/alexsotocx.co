@@ -16,10 +16,11 @@ class Template extends React.Component {
     return (
       <div className="App">
         <Navbar />
-        <section className="content">
-          <article className="content">
+        <section className="header"/>
+        <section className="page">
+          <section className="content">
             {this.props.children}
-          </article>
+          </section>
           <InformationAside/>
         </section>
         <Footer/>
