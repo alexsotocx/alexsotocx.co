@@ -1,6 +1,8 @@
 import React from 'react';
 import request from 'superagent';
+import {Link} from 'react-router';
 import markdown from 'utilities/markdownWrapper';
+
 class Post extends React.Component {
 
   constructor(props) {
@@ -28,10 +30,13 @@ class Post extends React.Component {
 
   render() {
     if(this.state.loading) {
-      return null;
+      return <Link to="/blog">Go back</Link>;
     } else {
       return (
-        <article className="PostContent" dangerouslySetInnerHTML={{__html: markdown(this.state.post)}}></article>
+        <div className="Entry">
+          <Link to="/blog"><i className="fa fa-arrow-left"/> Go back</Link>
+          <article className="PostContent" dangerouslySetInnerHTML={{__html: markdown(this.state.post)}}></article>
+        </div>
       );
     }
   }

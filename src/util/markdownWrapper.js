@@ -9,8 +9,7 @@ var markdown = new MarkdownIt({
     if (language && HighlightJS.getLanguage(language)) {
       try {
         return HighlightJS.highlight(language, code).value;
-      } catch (error) {
-      }
+      } catch (error) {}
     }
     return '';
   }

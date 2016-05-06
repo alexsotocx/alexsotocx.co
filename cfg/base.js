@@ -39,5 +39,9 @@ module.exports = {
       utilities: `${defaultSettings.srcPath}/util/`
     }
   },
-  module: {}
+  module: {},
+  stylus: {
+    use: [require('kouto-swiss')()],
+    import: ['~kouto-swiss/index.styl']
+  }
 };
