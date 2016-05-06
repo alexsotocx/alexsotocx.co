@@ -1,10 +1,20 @@
+.Entry
+  width 100%
+  .PostContent
+    position relative
+    max-width 100%
+    overflow hidden
+    border-top 1px #eee solid
+    margin-top 1rem
 .post
   position relative
   display flex
   border 1px solid #f0f0f0
-  border-radius: 3px
+  border-radius-mixin 3px
   padding 1rem
-  margin-bottom: 0.5rem
+  margin-bottom 1rem
+  flex-direction row
+
   .full-container-link
     position absolute
     top 0
@@ -12,18 +22,12 @@
     left 0
     bottom 0
     z-index 10
-  mobile
-    flex-direction column
-    .details
-      margin-left: 0
-      .title
-        text-align: center
   .image
     align-self center
   .details
-    margin-left: 1rem
+    margin-left 1rem
     p, section
-      margin: 0
+      margin 0
       padding-top 0.5rem
     .title
       font-size 1.5rem
@@ -35,11 +39,16 @@
         color blue
         &:before
           display inline-block
-          content: '*'
+          content '*'
     .author
       .name
         text-align left
-
+  +mobile_bp()
+    flex-direction column
+    .details
+      margin-left 0
+      .title
+        text-align center
 
 
 

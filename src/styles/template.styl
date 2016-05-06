@@ -96,9 +96,13 @@ p#heart
   padding 0 1rem
   display flex
   flex-direction row
-
+  position relative
   .content
-    flex 1
+    width 100%
+    position relative
+    +mobile_bp()
+      h1, h2, h3, h4, h5
+        text-align: center
 
 .NavigationBar
   font-size 1.2rem

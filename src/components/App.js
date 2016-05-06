@@ -1,4 +1,4 @@
-import { Router, Route, hashHistory, IndexRedirect, IndexRoute } from 'react-router';
+import { Router, Route, browserHistory, IndexRedirect, IndexRoute } from 'react-router';
 import React from 'react';
 import Main from './Template/Template';
 
@@ -13,7 +13,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router history={hashHistory}>
+      <Router history={browserHistory}>
         <Route path="/" component={Main}>
           <IndexRedirect to="blog"/>
           <Route path="blog" component={BlogIndex}/>
