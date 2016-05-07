@@ -1,7 +1,8 @@
 html
-  font-size 16px
+  font-size 21px
 body
-  font 1.3rem main-font
+  font-size 21px
+  font-family main-font
   color #333
   line-height 1.4
   text-align justify
@@ -13,15 +14,20 @@ body
 
 h1
   margin-top 0
-  font-weight normal
+  font-weight bold
+  font-size 1.8rem
+  margin-bottom 0.6rem
+
 
 h2
-  font-weight normal
+  font-weight bold
+  font-size 1.5rem
+  margin-bottom 0.4rem
 
 h3
-  font-weight normal
-  font-style italic
-  margin-top 3rem
+  font-weight bold
+  margin-top 1.3rem
+  margin-bottom 0.2rem
 
 p
   margin-top 0
@@ -37,9 +43,20 @@ ol
   padding-left 1.2rem
 
 blockquote
-  margin-left 1rem
   padding-left 1rem
+  margin-left 0
   border-left 1px solid #ddd
+  font-family quotes-font
+  p
+    position: relative
+    &:before
+      display inline
+      content "“"
+    &:after
+      display inline
+      position absolute
+      content "”"
+
 
 pre
   position relative
@@ -52,10 +69,10 @@ pre
   code
     position relative
     max-width 100%
-    overflow-x scroll
-    overflow-y visible
+    overflow-x auto
+    overflow-y auto
     font-family code-font
-    font-size .9rem
+    font-size .7rem
 
 
 
@@ -63,9 +80,15 @@ a
   color #2484c1
   text-decoration none
   &:hover
-    text-decoration underline
+    text-decoration none
   img
     border none
+
+p
+  a
+    font-family quotes-font
+    font-style italic
+
 
 h1 a, h1 a:hover
   color #333
@@ -90,39 +113,101 @@ p#heart
   color #B50000
 
 
-
-.page
-  margin 5rem auto 0 auto
-  padding 0 1rem
-  display flex
-  flex-direction row
-  position relative
-  .content
-    width 100%
-    position relative
-    +mobile_bp()
-      h1, h2, h3, h4, h5
-        text-align: center
-
-.NavigationBar
-  font-size 1.2rem
-  font-style italic
-  border-bottom 1px solid #ddd
-  padding 1rem 0
-  background-color white
-  position fixed
-  top 0
-  left 0
-  right 0
-  display flex
-  align-items center
-  justify-content center
-  z-index 20
+horizontal_list()
   ul
     padding 0
     margin 0
     display flex
     flex-direction row
     list-style none
+    flex 1
+    justify-content space-around
+
     li
-      padding 0 1rem
+      flex 1
+      text-align center
+
+
+.App
+  height 100vh
+  display flex
+  flex-wrap wrap
+  justify-content center
+  .NavigationBar
+    font-size 1rem
+    font-style italic
+    border-bottom 1px solid #ddd
+    padding 0.6rem 0
+    background-color white
+    position fixed
+    top 0
+    left 0
+    right 0
+    display flex
+    align-items center
+    justify-content center
+    z-index 20
+    font-family menus-font
+    horizontal_list()
+
+
+
+
+  .page
+    width 700px
+    +bp_700()
+      width 100%
+    margin 3rem 0 1rem 0
+    padding 0 1rem
+    .content
+      position relative
+      +mobile_bp()
+        h1, h2, h3, h4, h5
+          text-align: center
+
+  .Footer
+    align-self flex-end
+    flex 1 100%
+    height 60px
+    font-size 1rem
+    font-style italic
+    border-top 1px solid #ddd
+    padding 1rem 0
+    background-color white
+    bottom 0
+    horizontal_list()
+    ul
+      flex-wrap wrap
+      li
+        display flex
+        align-items center
+        justify-content center
+        img
+          max-width 60px
+          max-height 60px
+      .logo
+        a
+          text-decoration: none
+          color #333
+          &:hover
+            text-decoration none
+          h4
+            margin: auto
+
+    +mobile_bp()
+      ul
+        li
+          flex 1
+        .logo
+          flex 1 100%
+          order -1
+          margin-bottom 1rem
+
+
+
+
+
+
+
+
+

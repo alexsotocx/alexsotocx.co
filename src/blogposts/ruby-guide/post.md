@@ -51,33 +51,33 @@ no_existo = nil #Valores vacios
 ### Operaciones
 Las operaciones en ruby dependen de los tipos de datos, pero son bastante intiutivas ya que se espera que hagan lo que representan los operadores.
 ```ruby
-  soy_entero = 1 # => 1
-  soy_entero = 1 + 2 # => 3
-  soy_entero = soy_entero - 2 # => 2
-  soy_entero = soy_entero * 5 # => 10
-  soy_entero = soy_entero / 3 # => 3, arroja 3 porque los operandos son enteros
-  #####
-  soy_bool = true
-  ya_no_soy_bool = (!soy_bool) # La negación equivale al !
-  trabajo = true
-  duermo = false
-  trabajo_o_duermo = (trabajo or duermo) # true el "o" es una conjunción de matemática, es true si por lo menos uno de los involucrados es true caso contrario sería false
-  trabajo_y_duermo = (trabajo and duermo) # false el "y" es una disjunción de matemática, es true si los involucrados son verdaderos true caso contrario sería false
-  trabajo_o_exclusivo_duermo = (trabajo ^ duermo) # true el o exclusivo.
-  duermo = true
-  trabajo_o_exclusivo_duermo = (trabajo ^ duermo) #false
-  ##########
-  _1_mayor_que_2 = (1 > 2) #false
-  _2_mayor_que_1 = (2 > 1) #true
-  _1_menor_que_2 = (2 > 1) #true
-  _1_mayor_igual_2 = (1 >= 2) #false
-  _1_menor_igual_2 = (1 <= 2) #true
-  _1_igual_a_2  = (1 == 2) #false
-  _2_igual_a_2 = (2 == 2) #true
-  #Estas operaciones de comparación también aplican para Strings
-  string = "Hola"
-  string = string + " mundo" # =>  Hola Mundo
-  string = "Soy Alex y tengo #{20 + 2} años" #Interpolación de Strings
+soy_entero = 1 # => 1
+soy_entero = 1 + 2 # => 3
+soy_entero = soy_entero - 2 # => 2
+soy_entero = soy_entero * 5 # => 10
+soy_entero = soy_entero / 3 # => 3, arroja 3 porque los operandos son enteros
+#####
+soy_bool = true
+ya_no_soy_bool = (!soy_bool) # La negación equivale al !
+trabajo = true
+duermo = false
+trabajo_o_duermo = (trabajo or duermo) # true el "o" es una conjunción de matemática, es true si por lo menos uno de los involucrados es true caso contrario sería false
+trabajo_y_duermo = (trabajo and duermo) # false el "y" es una disjunción de matemática, es true si los involucrados son verdaderos true caso contrario sería false
+trabajo_o_exclusivo_duermo = (trabajo ^ duermo) # true el o exclusivo.
+duermo = true
+trabajo_o_exclusivo_duermo = (trabajo ^ duermo) #false
+##########
+_1_mayor_que_2 = (1 > 2) #false
+_2_mayor_que_1 = (2 > 1) #true
+_1_menor_que_2 = (2 > 1) #true
+_1_mayor_igual_2 = (1 >= 2) #false
+_1_menor_igual_2 = (1 <= 2) #true
+_1_igual_a_2  = (1 == 2) #false
+_2_igual_a_2 = (2 == 2) #true
+#Estas operaciones de comparación también aplican para Strings
+string = "Hola"
+string = string + " mundo" # =>  Hola Mundo
+string = "Soy Alex y tengo #{20 + 2} años" #Interpolación de Strings
  ```
 
 ### Condicionales

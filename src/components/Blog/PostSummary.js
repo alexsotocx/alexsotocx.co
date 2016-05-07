@@ -12,7 +12,7 @@ export default class PostSummary extends React.Component {
     let post = this.props.post;
     return (
       <article className="post">
-        <Link to={`blog/${post.folder}`} className="full-container-link"></Link>
+        <Link to={`/blog/${post.folder}`} className="full-container-link"></Link>
         <img className="image" src={`${config.blogPostPath}/${post.folder}/${post.cover_image}`}/>
         <section className="details">
           <p className="title">{post.title}</p>

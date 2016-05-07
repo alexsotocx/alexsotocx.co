@@ -1,4 +1,4 @@
-import { Router, Route, browserHistory, IndexRedirect, IndexRoute } from 'react-router';
+import { Router, Route, browserHistory, IndexRedirect } from 'react-router';
 import React from 'react';
 import Main from './Template/Template';
 

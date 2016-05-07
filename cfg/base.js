@@ -17,7 +17,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/../dist/assets'),
     filename: 'app.js',
-    publicPath: `.${defaultSettings.publicPath}`
+    publicPath: `${defaultSettings.publicPath}`
   },
   devServer: {
     contentBase: './src/',
@@ -36,7 +36,8 @@ module.exports = {
       stores: `${defaultSettings.srcPath}/stores/`,
       styles: `${defaultSettings.srcPath}/styles/`,
       config: `${defaultSettings.srcPath}/config/` + process.env.REACT_WEBPACK_ENV,
-      utilities: `${defaultSettings.srcPath}/util/`
+      utilities: `${defaultSettings.srcPath}/util/`,
+      images: `${defaultSettings.srcPath}/images/`
     }
   },
   module: {},

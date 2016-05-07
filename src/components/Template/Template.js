@@ -4,7 +4,6 @@ require('styles/App.styl');
 import React from 'react';
 
 import Navbar from './Navbar';
-import InformationAside from './InformationAside';
 import Footer from './Footer';
 
 class Template extends React.Component {
@@ -21,7 +20,6 @@ class Template extends React.Component {
           <section className="content">
             {this.props.children}
           </section>
-          <InformationAside/>
         </section>
         <Footer/>
       </div>

@@ -3,6 +3,9 @@ import request from 'superagent';
 import {Link} from 'react-router';
 import markdown from 'utilities/markdownWrapper';
 
+
+let config = require('config').default;
+
 class Post extends React.Component {
 
   constructor(props) {
@@ -15,7 +18,7 @@ class Post extends React.Component {
 
   componentDidMount() {
     request
-      .get(`/blogposts/${this.props.params.post_name}/post.md`)
+      .get(`${config.blogPostPath}${this.props.params.post_name}/post.md`)
       .end((err, res) => {
         var post = '# Error\n';
         if(!err) {
@@ -34,7 +37,7 @@ class Post extends React.Component {
     } else {
       return (
         <div className="Entry">
-          <Link to="/blog"><i className="fa fa-arrow-left"/> Go back</Link>
+          <Link to="/blog" className="static-link"><i className="fa fa-arrow-left"/> Go back</Link>
           <article className="PostContent" dangerouslySetInnerHTML={{__html: markdown(this.state.post)}}></article>
         </div>
       );

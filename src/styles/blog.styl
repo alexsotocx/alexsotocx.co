@@ -1,18 +1,27 @@
 .Entry
-  width 100%
+  padding 1rem
+  .static-link
+    display block
+    background-color white
+  +mobile_bp()
+    padding 1rem 0.3rem
+
   .PostContent
     position relative
-    max-width 100%
-    overflow hidden
-    border-top 1px #eee solid
     margin-top 1rem
+
+
+
+
 .post
   position relative
   display flex
   border 1px solid #f0f0f0
-  border-radius-mixin 3px
+  border-radius 4px
   padding 1rem
   margin-bottom 1rem
+  &:nth-last-of-type(1)
+    margin-bottom 0rem
   flex-direction row
 
   .full-container-link
@@ -36,10 +45,12 @@
       .tag
         display inline-block
         margin-right 0.5rem
-        color blue
+        color link_color
         &:before
           display inline-block
-          content '*'
+          content '\f02b'
+          font normal normal normal 1rem FontAwesome
+          margin-right 0.2rem
     .author
       .name
         text-align left
