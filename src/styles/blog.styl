@@ -1,14 +1,16 @@
 .Entry
   padding 1rem
+  position relative
+  height 100%
   .static-link
     display block
     background-color white
+    font-size: 1.3rem
   +mobile_bp()
     padding 1rem 0.3rem
-    .PostContent
-      font-size 1rem
 
   .PostContent
+    overflow auto
     position relative
     margin-top 1rem
 

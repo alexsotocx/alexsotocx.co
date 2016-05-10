@@ -1,40 +1,43 @@
-html
-  font-size 21px
 body
-  font-size 21px
+  font-size 1.5rem
   font-family main-font
   color #333
   line-height 1.4
   text-align justify
   position relative
+  +mobile_bp()
+    font-size 1rem
 
 *
   outline none
-
+  box-sizing border-box
 
 h1
+  font-size: 2.25rem
   margin-top 0
-  font-weight bold
-  font-size 1.8rem
   margin-bottom 0.6rem
 
 
 h2
-  font-weight bold
-  font-size 1.5rem
+  font-size: 1.75rem
   margin-bottom 0.4rem
 
 h3
-  font-weight bold
-  margin-top 1.3rem
+  font-size 1.5rem
   margin-bottom 0.2rem
+
+ul, li, p
+    font-size 1.3rem
+    +mobile_bp()
+      font-size: 1rem
 
 p
   margin-top 0
   -webkit-hypens auto
   -moz-hypens auto
   hyphens auto
-
+  color #555
+  margin-bottom 1rem
 ul
   list-style square
   padding-left 1.2rem
@@ -61,33 +64,30 @@ blockquote
 pre
   position relative
   max-width 100%
-  overflow scroll
+  overflow auto
   border 1px solid #f0f0f0
   border-radius: 3px
   padding: 0.5rem
   background white
+  font-size: 1rem
+  +mobile_bp()
+    font-size 0.8rem
   code
     position relative
     max-width 100%
-    overflow-x auto
-    overflow-y auto
     font-family code-font
-    font-size .7rem
 
 
 
 a
-  color #2484c1
+  color #FF6600
   text-decoration none
+  font-family quotes-font
   &:hover
     text-decoration none
   img
     border none
 
-p
-  a
-    font-family quotes-font
-    font-style italic
 
 
 h1 a, h1 a:hover
@@ -134,8 +134,6 @@ horizontal_list()
   flex-wrap wrap
   justify-content center
   .NavigationBar
-    font-size 1rem
-    font-style italic
     border-bottom 1px solid #ddd
     padding 0.6rem 0
     background-color white
@@ -148,18 +146,24 @@ horizontal_list()
     justify-content center
     z-index 20
     font-family menus-font
+    font-weight bold
     horizontal_list()
+    a
+      color: #333
+      text-decoration: none
+      &:hover
+        color: #FF6600
+        text-decoration: none
 
 
 
 
   .page
-    box-sizing border-box
-    width 700px
-    +bp_700()
-      width 100%
-    margin 3rem 0 1rem 0
+    margin 4rem 0 1rem 0
     padding 0 1rem
+    width 800px
+    +bp_800()
+      width 100%
     .content
       position relative
       +mobile_bp()
@@ -169,7 +173,6 @@ horizontal_list()
   .Footer
     align-self flex-end
     flex 1 100%
-    height 60px
     font-size 1rem
     font-style italic
     border-top 1px solid #ddd
