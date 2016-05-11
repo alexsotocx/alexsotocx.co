@@ -8,8 +8,8 @@
         "name": "Alexander Soto Cardona",
         "email": "asoto@innventto.com"
       },
-      "tags": ["ruby", "syntax", "guide"],
-      "description": "Ruby starting syntax, basic commands to make your ruby programs run",
+      "tags": ["Ruby", "Syntax", "Guide", "Programming"],
+      "description": "Ruby starting syntax, basic commands to make your ruby programs run.",
       "date": "2016-04-01"
     }
   ]

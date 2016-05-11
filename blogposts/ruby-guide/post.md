@@ -209,7 +209,8 @@ Check this gems:
 # About me
 * **Name**: Alexander Soto
 * **Email**: asoto@innventto.com
-* **twitter**: [alexsotocx](www.twitter.com/alexsotocx)
+* **Github**: https://github.com/alexsotocx/
+* **Twitter**: [alexsotocx](https://www.twitter.com/alexsotocx)
 * **Linkedin**: [Alvaro Alexander Soto Cardona](https://www.linkedin.com/in/alvaro-alexander-soto-cardona-374849108)
 * **Company**: Innventto S.A.S
 
