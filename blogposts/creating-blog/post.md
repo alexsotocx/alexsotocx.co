@@ -296,4 +296,4 @@ When finished we need to:
 * **Email**: asoto@innventto.com
 * **twitter**: [alexsotocx](www.twitter.com/alexsotocx)
 * **Linkedin**: [Alvaro Alexander Soto Cardona](https://www.linkedin.com/in/alvaro-alexander-soto-cardona-374849108)
-* **Company**: Innventto S.A.S
+* **Company**: [Innventto S.A.S](www.inventto.com)
