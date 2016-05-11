@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "title": "Creating your own blog",
+      "folder": "creating-blog",
+      "cover_image": "blog.jpg",
+      "author": {
+        "name": "Alexander Soto Cardona",
+        "email": "asoto@innventto.com"
+      },
+      "tags": ["React", "Blog", "React Router", "Programming"],
+      "description": "A blog created with your own hands using React JS",
+      "date": "2016-05-10"
+    },
+    {
       "title": "Ruby starting guide",
       "folder": "ruby-guide",
       "cover_image": "ruby.png",
