@@ -81,7 +81,7 @@ To correctly make our project work we need to do four basic things first.
 4. **Superagent**: ```npm install --save superagent```
 
 
-### Build the router
+### Developing the app router
 React router provides us a way to specify the routes for our application, that is done creating a **Route** component. The route component has two basic props, the **path** and the **component** that will handle that route. We have to define three routes to make our blog work, let's see them:
 
 1. The root **"/"**: Where the users will arrive.
@@ -122,7 +122,7 @@ class App extends React.Component {
 export default App;
 
 ```
-### Building the index
+### Creating the index
 The index is where our users will arrive. This page will help the user to find what they want to read.
 
 When the user come to this route, React Router will mount the **BlogIndex** component and it fire an action called **componentWillMount**, this action is a function, it will request from **GithubPages** the file posts.json.
@@ -225,7 +225,7 @@ The most important part of the last code is the connection  between pages, it's 
 <Link to={`/blog/${post.folder}`} className="full-container-link"></Link>
 ```
 
-### Building the post viewer
+### Developing the post viewer
 The post viewer is one of the easiest component, but it's the most important. This component load the post from **GithubPages** in markdown format and transform it to HTML using **Markdown-it** module and then insert it to the view. 
 This component handles the route <Route path="blog/:post_name" component={Post}/>, as the user comes to this page, React router generates a **param** variable that has post_name it. We use the post_name variable to request the specific post.
 
