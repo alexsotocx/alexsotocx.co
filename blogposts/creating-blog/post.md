@@ -40,7 +40,7 @@ The **posts** key is an array with the posts of the blog, each post must have:
 6. **description**: Is the description of the post.
 7. **data**: The published date.
 
-The posts are going to be store in a selected folder, each post must have a folder with a unique name (like a normal file system). In the post folder will be the files needed to correctly render the post; as we use markdown to generate our posts we define a file called **post.md**.
+The posts are going to be store in a selected folder, each post must have a folder with a unique name (like a normal file system). In the post folder will be the files to correctly render the post; as we use markdown to generate our posts we define a file called **post.md**.
 
 ### Surge - Webpage
 Surge is a static page publisher, it let you upload a static page to their servers and they serve all your files using a CDN. I choose surge because it let you publish your website from your terminal and let you manage client side routing using HTML5 API, take a look at this [article](https://surge.sh/help/adding-a-200-page-for-client-side-routing).
@@ -64,7 +64,7 @@ After install nodejs, let's use [Yeoman](http://yeoman.io/) to scaffolding our w
 npm install -g yo
 ```
 
-With yeoman we can install the generator needed to structure our app. I personally used the [Generator React Webpack](https://github.com/newtriks/generator-react-webpack) because it has a lot of features and you can configure it easily. So, to install this generator and scaffold our app. Run the next commands in your terminal and follow the instructions.
+With yeoman we can install the generator to structure our app. I personally used the [Generator React Webpack](https://github.com/newtriks/generator-react-webpack) because it has a lot of features and you can configure it easily. So, to install this generator and scaffold our app. Run the next commands in your terminal and follow the instructions.
 
 ```
 npm install -g generator-react-webpack
@@ -72,7 +72,7 @@ mkdir blog && cd blog
 yo react-webpack
 ```
 
-### Installing needed dependencies
+### Installing dependencies
 To correctly make our project work we need to do four basic things first.
 
 1. Install all the dependencies from the scaffolded project with ```npm install```
