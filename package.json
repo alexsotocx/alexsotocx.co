@@ -12,7 +12,7 @@
     "serve": "node server.js --env=dev",
     "serve:dist": "node server.js --env=dist",
     "dist": "npm run clean && npm run copy && webpack --env=dist",
-    "publish": "npm run dist && cd dist/ && mv index.html 200.html && echo 'alexsotocx.co' > CNAME && rm assets/app.js.map && surge",
+    "publish": "npm run dist && cd dist/ && mv index.html 200.html && rm assets/app.js.map && surge",
     "lint": "eslint ./src",
     "copy": "copyfiles -f ./src/index.html ./src/favicon.ico ./dist",
     "clean": "rimraf dist/*",
@@ -64,7 +64,7 @@
     "rimraf": "^2.4.3",
     "style-loader": "^0.13.0",
     "stylus": "^0.54.5",
-    "stylus-loader": "^1.5.1",
+    "stylus-loader": "^2.4.0",
     "url-loader": "^0.5.6",
     "webpack": "^1.12.0",
     "webpack-dev-server": "^1.14.1"
